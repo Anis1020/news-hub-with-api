@@ -18,8 +18,8 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <header>
+  <body onload="newsCategory()">
+    <header class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Navbar w/ text</a>
@@ -53,7 +53,19 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="container">
+      <!-- category section -->
+      <div
+        id="category_div"
+        class="d-flex justify-content-between mb-4 mt-4 gap-3"
+      ></div>
+      <!-- alert  -->
+      <div class="alert alert-secondary" role="alert">
+        <span id="news_items">0</span> A simple secondary alert—check it out!
+        <span id="news_title"></span>
+      </div>
+    </main>
     <footer></footer>
+    <script src="index.js"></script>
   </body>
 </html>
